@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MY TV LIST</title>
+    <!-- Required meta tags -->
+    <link rel="stylesheet"  href="index.css">
+    <script defer type="text/javascript" src="index.js"></script>
+    <!-- Bootstrap CSS -->
+    
+  </head>
+  <body>
+   
+    <h1>MY TV LIST</h1>
+    <div id="my-dropdown">
+    <label for="List">WatchList:</label>
+    <select id="viewlist"  name="select-views" >
+      <option value="all">all</option>
+      <option value="watched">watched</option>
+      <option value="unwatched">unwatched</option>
+     </select>
+  </div>
+  <form class="example" action="action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+    
+  
+    <div id="tv-list">
+   </div>
+    <div id="display-info">
+      <div id='details'>
+
+      </div>
+      <iframe 
+        width="465" 
+        height="270" 
+        src="" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <div class="btndiv">
+      </div>
+  
+    </div>
+  
+
+   
+      <div class="container">
+      <form class="add-Movie-form">
+        <h5>ADD Movie or Show</h5>
+
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Enter a movie or show name..."
+          class="input-text"
+        />
+        <br />
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Enter a contenttype..."
+          class="input-text"
+        />
+        <br />
+        <input
+          type="text"
+          name="image"
+          value=""
+          placeholder="Enter Rating..."
+          class="input-text"
+        />
+        <br />
+        <input
+        type="text"
+        name="image"
+        value=""
+        placeholder="Enter a video URL..."
+        class="input-text"
+      />
+      <br />
+        <input
+          type="submit"
+          name="submit"
+          value="Enter "
+          class="submit"
+        />
+      </form>
+    </div>
+  
+  </body>
+</html>

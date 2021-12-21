@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+  background: linear-gradient(to bottom, #1F4E79 50%, #1F4E79 50%, #ddd 50%, #ddd 70%);
+  opacity: 5.7;
+}
+span {
+  color:  greenyellow;
+}
+#tv-list {
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+#tv-list span{
+    height: 60%;
+    width: 13vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid greenyellow;
+  
+  }
+  #display-info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+ 
+  #display-info iframe{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+  }
+  h2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+h3 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+input {
+    margin-right: 20px;
+    flex-flow: column ;
+    font-size: 1.3rem;
+    Display: inherit;
+    border: 3px solid #73AD21;
+    background: beige;
+    position: sticky;
+    bottom:1;
+   
+}
+input:hover {
+  transform: translate(10px, 5px);
+  background: rgb(0, 225, 255);
+  transition: 0.3s;
+}
+label {
+  font-size: 1.3rem;
+  opacity: 10;
+}
+#my-dropdown :hover{
+  display: inline-block;
+  position: relative;
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+h5 {
+  font-size: 1.3rem;
+  height: 6vh;
+}
+.fa-trash {
+  font-size: 1.9rem;
+}
+.fa-check {
+  font-size: 1.9rem;
+  transition: 1.8s;
+  transform: translate(30px, 10px);
+}
