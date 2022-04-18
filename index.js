@@ -7,10 +7,10 @@ let iframe = document.querySelector("iframe")
 let searchBar = document.querySelector(".example")
 let tvShows = []
 
-fetch(" http://localhost:3000/tv")
+fetch("http://localhost:3000/tv")
 .then(resp => resp.json())
 .then(allTvArray => {
-    //console.log(allTvArray)
+    console.log(allTvArray)
 
     tvShows = allTvArray
     allTvArray.forEach(tvDisplay => television(tvDisplay))
