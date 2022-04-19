@@ -42,6 +42,10 @@ span.addEventListener("click", (e) => {
     iTrash.className = "fa-trash"
     iTrash.textContent = "🚮 "
     
+    let watchAgain = document.createElement("i")
+    watchAgain.className = "watch"
+    iTrash.textContent = "↪️"
+    
     iTrash.addEventListener("click", (event) => { handleTrash(event, tvDisplay)})
     iCheck.addEventListener("click", (event) => { handleCheck(event, tvDisplay)})
     searchBar.addEventListener("submit", (event) => {searchBar(event, tvDisplay)})
@@ -130,8 +134,8 @@ fetch("http://localhost:3000/tv", {
         // .filter the tvShows to get just an array of shows that have watchlist === true
         // iterate (forEach) through the new filtered array and for each show call the television function
     }
-    else if(e.target.value === "unwatched") {
-        tvShows.filter(movie => movie.watchlist === false).forEach(movie => television(movie))
+    else if(e.target.value === "favorite") {
+        tvShows.filter(movie => movie.watchlist === true).forEach(movie => television(movie))
         // .filter the tvShows to get just an array of shows that have watchlist === false
         // iterate (forEach) through the new filtered array and for each show call the television function
     }else{

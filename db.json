@@ -6,7 +6,7 @@
       "contenttype": "Movie",
       "video": "https://www.youtube.com/embed/_qyw6LC5pnE",
       "rating": "Rating: ⭐ ⭐ ⭐ ⭐",
-      "watchlist": false
+      "watchlist": true
     },
     {
       "id": 3,
@@ -14,7 +14,7 @@
       "contenttype": "TV Series",
       "video": "https://www.youtube.com/embed/htqXL94Rza4",
       "rating": "Rating: ⭐ ⭐ ⭐ ⭐ ⭐",
-      "watchlist": false
+      "watchlist": 
     },
     {
       "id": 4,
@@ -22,7 +22,7 @@
       "contenttype": "TV Series",
       "video": "https://www.youtube.com/embed/w7fuOkF74Zw",
       "rating": "Rating: ⭐ ⭐ ⭐ ⭐ ⭐",
-      "watchlist": true
+      "watchlist": false
     },
     {
       "id": 6,
@@ -38,7 +38,7 @@
       "contenttype": "Movie",
       "video": "https://www.youtube.com/embed/DIA9CST5Vxk",
       "rating": "Rating: ⭐ ⭐ ⭐",
-      "watchlist": true
+      "watchlist": false
     },
     {
       "title": "dghjswdk",
