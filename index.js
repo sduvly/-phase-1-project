@@ -44,7 +44,7 @@ span.addEventListener("click", (e) => {
     
     let watchAgain = document.createElement("i")
     watchAgain.className = "watch"
-    iTrash.textContent = "↪️"
+    watchAgain.textContent = "↪️"
     
     iTrash.addEventListener("click", (event) => { handleTrash(event, tvDisplay)})
     iCheck.addEventListener("click", (event) => { handleCheck(event, tvDisplay)})
@@ -58,6 +58,7 @@ span.addEventListener("click", (e) => {
     btnDiv.innerHTML = " "
     btnDiv.append(iCheck)
     btnDiv.append(iTrash)
+    btnDiv.append(watchAgain)
    })
 } 
 
@@ -131,24 +132,14 @@ fetch("http://localhost:3000/tv", {
     document.querySelector("#tv-list").innerHTML = " "
     if(e.target.value === "watched") {
         tvShows.filter(movie => movie.watchlist === true).forEach(movie => television(movie))
-        // .filter the tvShows to get just an array of shows that have watchlist === true
-        // iterate (forEach) through the new filtered array and for each show call the television function
     }
     else if(e.target.value === "favorite") {
         tvShows.filter(movie => movie.watchlist === true).forEach(movie => television(movie))
-        // .filter the tvShows to get just an array of shows that have watchlist === false
-        // iterate (forEach) through the new filtered array and for each show call the television function
+   
     }else{
         tvShows.forEach(movie => television(movie))
     }
 })
-
-// add a checkbutton to update the watchlist to true or false
-//  function update(){
-//      let check = document.querySelector(".fas fa-check")
-//      let trash = document.querySelector(".fas fa-trash")
-
-//  }
 
 function search(event, searchItem){
     event.preventDefault()
