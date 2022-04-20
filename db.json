@@ -14,7 +14,7 @@
       "contenttype": "TV Series",
       "video": "https://www.youtube.com/embed/htqXL94Rza4",
       "rating": "Rating: ⭐ ⭐ ⭐ ⭐ ⭐",
-      "watchlist": 
+      "watchlist": true
     },
     {
       "id": 4,
@@ -39,14 +39,6 @@
       "video": "https://www.youtube.com/embed/DIA9CST5Vxk",
       "rating": "Rating: ⭐ ⭐ ⭐",
       "watchlist": false
-    },
-    {
-      "title": "dghjswdk",
-      "contenttype": "fsiuyf",
-      "rating": "fief",
-      "video": "fvuefi",
-      "watchlist": "false",
-      "id": 8
     },
     {
       "title": "Equalizer",

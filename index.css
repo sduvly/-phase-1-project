@@ -4,12 +4,18 @@
     box-sizing: border-box;
     
 }
+
 body {
   background: linear-gradient(to bottom, #1F4E79 50%, #1F4E79 50%, #ddd 50%, #ddd 70%);
   opacity: 5.7;
 }
-span {
+#span {
   color:  greenyellow;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #tv-list {
     height: 10vh;
@@ -88,6 +94,11 @@ h5 {
   font-size: 1.9rem;
 }
 .fa-check {
+  font-size: 1.9rem;
+  transition: 1.8s;
+  transform: translate(30px, 10px);
+}
+.watch{
   font-size: 1.9rem;
   transition: 1.8s;
   transform: translate(30px, 10px);

@@ -44,10 +44,11 @@ span.addEventListener("click", (e) => {
     
     let watchAgain = document.createElement("i")
     watchAgain.className = "watch"
-    watchAgain.textContent = "↪️"
+    watchAgain.textContent = "❤️"
     
     iTrash.addEventListener("click", (event) => { handleTrash(event, tvDisplay)})
     iCheck.addEventListener("click", (event) => { handleCheck(event, tvDisplay)})
+    watchAgain.addEventListener("click", (event) => { handleCheck(event, tvDisplay)})
     searchBar.addEventListener("submit", (event) => {searchBar(event, tvDisplay)})
     
     detailsDiv.innerHTML = " "
@@ -133,9 +134,11 @@ fetch("http://localhost:3000/tv", {
     if(e.target.value === "watched") {
         tvShows.filter(movie => movie.watchlist === true).forEach(movie => television(movie))
     }
-    else if(e.target.value === "favorite") {
-        tvShows.filter(movie => movie.watchlist === true).forEach(movie => television(movie))
+    else if(e.target.value === "unwatched") {
+        tvShows.filter(movie => movie.watchlist === false).forEach(movie => television(movie))
    
+    }else if(e.target.value === "favorite") {
+        tvShows.filter(movie => movie.watchlist === true).forEach(movie => television(movie))
     }else{
         tvShows.forEach(movie => television(movie))
     }
