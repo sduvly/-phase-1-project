@@ -48,7 +48,7 @@ span.addEventListener("click", (e) => {
     
     iTrash.addEventListener("click", (event) => { handleTrash(event, tvDisplay)})
     iCheck.addEventListener("click", (event) => { handleCheck(event, tvDisplay)})
-    watchAgain.addEventListener("click", (event) => { handleCheck(event, tvDisplay)})
+    watchA.addEventListener("click", (event) => { handleCheck(event, tvDisplay)})
     searchBar.addEventListener("submit", (event) => {searchBar(event, tvDisplay)})
     
     detailsDiv.innerHTML = " "
