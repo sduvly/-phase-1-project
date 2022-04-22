@@ -81,13 +81,12 @@ label {
   opacity: 10;
 }
 #my-dropdown {
-  display: inline-block;
-  position: relative;
+  
   color: #FFFFFF;
-  background-color: #00A4BD;
+  /* background-color: #00A4BD; */
   min-height: 15px;
   position:absolute; 
-  left:1422px; 
+  left:1628px; 
   top:20px;
  
 }
@@ -120,9 +119,10 @@ h1 {
   left:1422px; 
   top:20px;
  }
- .view {
+ /* .view {
   min-height: 15px;
   position:absolute; 
-  left:722px; 
+  left:2px; 
   top:20px;
- }
+  
+ } */
