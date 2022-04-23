@@ -34,8 +34,8 @@
 
       </div>
       <iframe 
-        width="465" 
-        height="270" 
+        width="565" 
+        height="370" 
         src="" 
         title="YouTube video player" 
         frameborder="0" 
@@ -52,39 +52,32 @@
       <div class="container">
       <form class="add-Movie-form">
         <h5>ADD Movie or Show</h5>
-
-        <input
-          type="text"
-          name="name"
-          value=""
-          placeholder="Enter a movie or show name..."
-          class="input-text"
-        />
+        <div class="row mb-3">
+          <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Name</label>
+          <div class="col-sm-10">
+            <input type="name" class="form-control form-control-sm" id="colFormLabelSm" placeholder="name">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="colFormLabel" class="col-sm-2 col-form-label">Content Type</label>
+          <div class="col-sm-10">
+            <input type="Content Type" class="form-control" id="colFormLabel" placeholder="Content Type">
+          </div>
+        </div>
+        <div class="row">
+          <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Rating</label>
+          <div class="col-sm-10">
+            <input type="Rating" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Rating">
+          </div>
+        </div>
+        <div class="row">
+          <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Video URL</label>
+          <div class="col-sm-10">
+            <input type="Video URL" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Video URL">
+          </div>
+        </div>
+  
         <br />
-        <input
-          type="text"
-          name="name"
-          value=""
-          placeholder="Enter a contenttype..."
-          class="input-text"
-        />
-        <br />
-        <input
-          type="text"
-          name="image"
-          value=""
-          placeholder="Enter Rating..."
-          class="input-text"
-        />
-        <br />
-        <input
-        type="text"
-        name="image"
-        value=""
-        placeholder="Enter a video URL..."
-        class="input-text"
-      />
-      <br />
         <input
           type="submit"
           name="submit"
@@ -92,6 +85,8 @@
           class="submit"
         />
       </form>
+      
+     
     </div>
   
   </body>

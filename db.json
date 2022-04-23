@@ -44,7 +44,7 @@
       "title": "Equalizer",
       "contenttype": "Movie ",
       "rating": "5 star",
-      "video": "https://www.youtube.com/embed/jt5WMVzsFnQ\"",
+      "video": "https://www.youtube.com/embed/jt5WMVzsFnQ",
       "watchlist": "false",
       "id": 9
     },
@@ -52,9 +52,36 @@
       "title": "Fast & Furious",
       "contenttype": "Movie ",
       "rating": "5 star",
-      "video": "\"https://www.youtube.com/embed/QqZWSzs2mAs\"",
+      "video": "https://www.youtube.com/embed/QqZWSzs2mAs",
       "watchlist": "false",
       "id": 10
+    },
+    {
+      "title": "Blacklist",
+      "contenttype": "Tv Series ",
+      "rating": "5 star",
+      "video": "https://www.youtube.com/embed/JGBIimq1I3A",
+      "watchlist": "false",
+      "id": 11
+    },
+    {
+      "title": "The Endgame",
+      "contenttype": "Tv Series ",
+      "rating": "3 star",
+      "video": "https://www.youtube.com/embed/NtkbmqOqY0c",
+      "watchlist": "false",
+      "id": 12
+    },
+    {
+      "title": "Snowfal",
+      "contenttype": "Tv Series ",
+      "rating": "5 star",
+      "video": "https://www.youtube.com/embed/0yCoLNmhJWM",
+      "watchlist": "false",
+      "id": 12
     }
+
+
+   
   ]
 }
