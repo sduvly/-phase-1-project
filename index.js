@@ -137,9 +137,9 @@ fetch("http://localhost:3000/tv", {
     else if(e.target.value === "unwatched") {
         tvShows.filter(movie => movie.watchlist === false).forEach(movie => television(movie))
    
-    }else if(e.target.value === "favorite") {
-        tvShows.filter(movie => movie.watchlist === true).forEach(movie => television(movie))
-    }else{
+    // }else if(e.target.value === "favorite") {
+    //     tvShows.filter(movie => movie.watchlist === true).forEach(movie => television(movie))
+    // }else{
         tvShows.forEach(movie => television(movie))
     }
 })
