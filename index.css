@@ -39,16 +39,17 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
+   
   }
 
  
-  /* #display-info iframe{
+  iframe{
     display: flex;
     flex-flow: column;
     align-items: center ;
     text-align: center;
-    
-  } */
+    top: auto
+  }
   h2 {
     display: flex;
     flex-flow: column;

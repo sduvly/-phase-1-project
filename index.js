@@ -5,7 +5,7 @@ let detailsDiv = document.querySelector("#details")
 let btnDiv = document.querySelector(".btndiv")
 let iframe = document.querySelector("iframe")
 let searchBar = document.querySelector(".example")
-let tvShows = []
+
 
 fetch("http://localhost:3000/tv")
 .then(resp => resp.json())
@@ -137,9 +137,9 @@ fetch("http://localhost:3000/tv", {
     else if(e.target.value === "unwatched") {
         tvShows.filter(movie => movie.watchlist === false).forEach(movie => television(movie))
    
-    // }else if(e.target.value === "favorite") {
-    //     tvShows.filter(movie => movie.watchlist === true).forEach(movie => television(movie))
-    // }else{
+    }else if(e.target.value === "favorite") {
+        tvShows.filter(movie => movie.watchlist === true).forEach(movie => television(movie))
+    }else{
         tvShows.forEach(movie => television(movie))
     }
 })
