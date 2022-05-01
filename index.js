@@ -29,6 +29,8 @@ span.addEventListener("click", (e) => {
     let h3= document.createElement("h2")
     let h4 = document.createElement("h3")
     let h2 = document.createElement("h1")
+    // add btn for search
+    let btn = document.createElement("button")
     h2.textContent = tvDisplay.title
     iframe.src = tvDisplay.video
     h3.textContent = tvDisplay.contenttype
