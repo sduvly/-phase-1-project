@@ -30,7 +30,7 @@ span.addEventListener("click", (e) => {
     let h4 = document.createElement("h3")
     let h2 = document.createElement("h1")
     // add btn for search
-    let btn = document.createElement("button")
+   
     h2.textContent = tvDisplay.title
     iframe.src = tvDisplay.video
     h3.textContent = tvDisplay.contenttype
@@ -47,6 +47,7 @@ span.addEventListener("click", (e) => {
     let watchAgain = document.createElement("i")
     watchAgain.className = "watch"
     watchAgain.textContent = "❤️"
+
     
     iTrash.addEventListener("click", (event) => { handleTrash(event, tvDisplay)})
     iCheck.addEventListener("click", (event) => { handleCheck(event, tvDisplay)})
@@ -148,10 +149,15 @@ fetch("http://localhost:3000/tv", {
 
 function search(event, searchItem){
     event.preventDefault()
+    let btn = document.createElement("button")
+    btn.className = "searchBtn"
+    btn.textContent = "search"
     console.log(event.target[0].value)
     const tvTitle = searchItem.title
     if(event.target[0].value === tvTitle){
         return event.target[0].value
     }
-
+ 
+    div1.innerHTML = " "
+    div1.append(btn)
 }
