@@ -5,7 +5,7 @@ let detailsDiv = document.querySelector("#details")
 let btnDiv = document.querySelector(".btndiv")
 let iframe = document.querySelector("iframe")
 let searchBar = document.querySelector(".example")
-
+let class1 = document.querySelector("#example")
 
 fetch("http://localhost:3000/tv")
 .then(resp => resp.json())
@@ -158,6 +158,6 @@ function search(event, searchItem){
         return event.target[0].value
     }
  
-    div1.innerHTML = " "
-    div1.append(btn)
+    class1.innerHTML = " "
+    class1.append(btn)
 }
