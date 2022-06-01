@@ -152,10 +152,10 @@ function search(event, searchItem){
     let btn = document.createElement("button")
     btn.className = "searchBtn"
     btn.textContent = "search"
-    console.log(event.target[0].value)
+    console.log(event.target.value)
     const tvTitle = searchItem.title
-    if(event.target[0].value === tvTitle){
-        return event.target[0].value
+    if(event.target.value === tvTitle){
+        return event.target.value
     }
  
     class1.innerHTML = " "
